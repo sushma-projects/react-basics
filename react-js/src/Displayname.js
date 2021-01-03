@@ -1,11 +1,12 @@
+
 import React from 'react'
 
-function Displayname(props) {
-    console.log(props);
+function Displayname({name,alertName}) {
     return (
         <div>
-            <h1>Hi Sakshi</h1>
-          
+            <h1>My self {name}</h1>
+            <button onClick={()=>{alertName("Sakshii")}}>Click</button> 
+            
         </div>
     )
 }
@@ -19,25 +20,14 @@ export default Displayname
 
 
 
-
-
-
-
-// // function DisplayName(props)
-// // {
-   
-// // }
-
-// // export default DisplayName;
-
-// // // or 
-// export function DisplayName(props)
+// export function Displayname(props)
 // {
-//     return <h1>Hi Simran</h1>
+//     return <h1>hello me </h1>
 // }
 
-// export const DisplayAgee =(props)=> {
 
-//     return <p>My age is 23</p>
 
-// }
+
+
+
+
